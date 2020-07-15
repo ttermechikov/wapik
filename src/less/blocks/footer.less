@@ -1,0 +1,155 @@
+.footer {
+  &__wrapper {
+    .center(@desktop-max-width);
+
+    padding-top: 98px;
+
+    @media (max-width: @desktop-width) {
+      padding-top: 49px;
+    }
+    @media (max-width: @tablet-width) {
+      padding: 49px 0 0;
+      margin: 0;
+    }
+  }
+
+  &__top {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding-bottom: 57px;
+    border-bottom: 1px solid #eef1ec;
+
+    @media (max-width: @desktop-width) {
+      .center(@tablet-max-width);
+
+      flex-wrap: wrap;
+      padding-bottom: 38px;
+    }
+    @media (max-width: @tablet-width) {
+      padding-bottom: 0;
+    }
+  }
+
+  &__top-child {
+    width: 25%;
+
+    @media (max-width: @desktop-width) {
+      width: 50%;
+    }
+    @media (max-width: @tablet-width) {
+      width: 100%;
+      margin-bottom: 18px;
+    }
+  }
+
+  &__info {
+    @media (max-width: @desktop-width) {
+      max-width: none;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 18px;
+    color: rgb(15, 95, 92);
+    font-family: "ProximaNovaBold", Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    line-height: 0.8;
+    text-transform: uppercase;
+  }
+
+  &__contacts {
+    color: rgb(131, 167, 165);
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+  }
+
+  &__nav {
+    @media (max-width: @desktop-width) {
+      padding: 0 0 25px;
+    }
+  }
+
+  &__head {
+    padding-bottom: 22px;
+    color: rgb(15, 95, 92);
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 13px;
+    line-height: 1;
+
+    @media (max-width: @tablet-width) {
+      padding-bottom: 14px;
+    }
+  }
+
+  &__list {
+    padding: 0;
+    margin: 0;
+    color: rgb(131, 167, 165);
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 13px;
+    line-height: 1.9;
+    list-style: none;
+  }
+
+  &__others {
+    @media (max-width: @desktop-width) {
+      padding-right: 0;
+    }
+  }
+
+  &__newsletter {
+    @media (max-width: @desktop-width) {
+      max-width: none;
+      padding-bottom: 0;
+    }
+  }
+
+  &__newsletter-info {
+    margin-bottom: 20px;
+    color: rgb(131, 167, 165);
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 13px;
+    line-height: 1.2;
+  }
+
+  &__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 0 14px;
+  }
+
+  &__copyright {
+    color: rgb(131, 167, 165);
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 12px;
+    line-height: 1.5;
+
+    @media (max-width: @tablet-width) {
+      width: 100%;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+
+  &__socials {
+    @media (max-width: @tablet-width) {
+      width: 100%;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+  }
+
+  &__icon {
+    padding-right: 10px;
+  }
+
+  &__icon:hover {
+    transform: scale(1.1);
+    transition: 0.5s ease;
+  }
+}

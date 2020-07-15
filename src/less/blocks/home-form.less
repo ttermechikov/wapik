@@ -1,0 +1,50 @@
+.home-form {
+  display: flex;
+  max-width: 246px;
+  justify-content: center;
+
+  @media (max-width: @tablet-width) {
+    max-width: 100%;
+  }
+
+  &:hover {
+    box-shadow: 4px 4px 10px #6fb048;
+    cursor: pointer;
+    transition: 0.5s ease;
+  }
+
+  &:active,
+  &:focus {
+    border-color: #6fb048;
+  }
+
+  &__email {
+    width: 80%;
+    height: 36px;
+    padding: 12px 0 12px 15px;
+    border-width: 0;
+    background-color: #eef1ec;
+    color: rgb(131, 167, 165);
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 13px;
+    line-height: 1.385;
+  }
+
+  &__submit {
+    width: 20%;
+    height: 36px;
+    padding: 12px 0;
+    border: none;
+    background-color: #eef1ec;
+    background-image: url("../img/letter.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+
+    &:hover {
+      border-width: 1px;
+      border-style: solid;
+      border-color: #eef1ec;
+    }
+  }
+}

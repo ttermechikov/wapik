@@ -1,0 +1,7 @@
+{
+  "extends": [
+    "stylelint-config-idiomatic-order",
+    "stylelint-config-standard",
+    "stylelint-config-prettier"
+  ]
+}

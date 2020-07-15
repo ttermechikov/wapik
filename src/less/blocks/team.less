@@ -1,0 +1,124 @@
+.team {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 76px 0 117px;
+  background-color: rgb(238, 241, 236);
+  text-align: center;
+
+  @media (max-width: @desktop-width) {
+    padding: 51px 0 78px;
+  }
+  @media (max-width: @tablet-width) {
+    padding: 34px 0 52px;
+  }
+
+  &__title {
+    position: relative;
+    margin-bottom: 60px;
+    color: rgb(15, 95, 92);
+    font-family: "RobotoLight", sans-serif;
+    font-size: 32px;
+    line-height: 0.8;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 26px;
+      font-size: 21px;
+    }
+  }
+
+  &__title::after {
+    position: absolute;
+    top: 45px;
+    left: 35.3%;
+    width: 65px;
+    height: 1px;
+    border-bottom: 1px solid #6fb048;
+    content: " ";
+
+    @media (max-width: @tablet-width) {
+      top: 33px;
+      left: 30%;
+    }
+  }
+
+  &__description {
+    max-width: 679px;
+    margin-bottom: 90px;
+    color: rgb(131, 167, 165);
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 15px;
+    line-height: 1.35;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 60px;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 30px;
+    }
+  }
+
+  &__persons {
+    .center(982px);
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: @desktop-width) {
+      flex-wrap: wrap;
+    }
+    @media (max-width: @tablet-width) {
+      .center(@tablet-max-width);
+
+      justify-content: center;
+    }
+  }
+
+  &__wrapper {
+    display: flex;
+    max-width: 300px;
+    flex-direction: column;
+    margin: 0;
+
+    @media (max-width: @tablet-width) {
+      margin-bottom: 26px;
+    }
+  }
+
+  &__wrapper:nth-child(2) {
+    margin: 0 41px;
+
+    @media (max-width: @tablet-width) {
+      margin: 0 0 26px;
+    }
+  }
+
+  &__image {
+    width: 299px;
+    height: 180px;
+    margin-bottom: 17px;
+    object-fit: cover;
+  }
+
+  &__person {
+    margin-bottom: 5px;
+    color: rgb(15, 95, 92);
+    font-family: "RobotoMedium", sans-serif;
+    font-size: 15px;
+    line-height: 1.1;
+    text-align: left;
+  }
+
+  &__profession {
+    color: rgb(131, 167, 165);
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 14px;
+    line-height: 1.1;
+    text-align: left;
+  }
+}

@@ -1,0 +1,134 @@
+.about {
+  position: relative;
+  padding: 62px 0;
+  background-color: #eef1ec;
+
+  @media (max-width: @desktop-width) {
+    padding: 41px 0;
+  }
+  @media (max-width: @tablet-width) {
+    padding: 27px 0;
+  }
+
+  &--main {
+    padding: 78px 0 106px;
+    background-color: #fff;
+
+    @media (max-width: @desktop-width) {
+      padding: 52px 0 71px;
+    }
+    @media (max-width: @tablet-width) {
+      padding: 34px 0 0;
+    }
+  }
+
+  &__wrapper {
+    .center(@desktop-max-width);
+
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: @desktop-width) {
+      .center(@tablet-max-width);
+    }
+  }
+
+  &__wrapper--main {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  &__title {
+    position: relative;
+    max-width: 477px;
+    padding-top: 107px;
+    margin-bottom: 16px;
+    color: rgb(15, 95, 92);
+    font-family: "RobotoLight", sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    white-space: nowrap;
+
+    @media (max-width: @desktop-width) {
+      max-width: none;
+      padding-top: 0;
+      margin-bottom: 11px;
+      font-size: 24px;
+      text-align: center;
+    }
+    @media (max-width: @tablet-width) {
+      margin-bottom: 7px;
+      font-size: 21px;
+    }
+  }
+
+  &__title--main {
+    padding: 0;
+    margin-bottom: 60px;
+    line-height: 0.85;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 40px;
+    }
+    @media (max-width: @desktop-width) {
+      margin-bottom: 20px;
+    }
+  }
+
+  &__title--main::after {
+    position: absolute;
+    top: 46px;
+    left: 25%;
+    width: 65px;
+    border-bottom: 1px solid #6fb048;
+    content: " ";
+
+    @media (max-width: @tablet-width) {
+      top: 30px;
+      left: 10%;
+    }
+  }
+
+  &__description {
+    max-width: 494px;
+    margin-bottom: 116px;
+    color: rgb(131, 167, 165);
+    font-family: "RobotoRegular", sans-serif;
+    font-size: 14px;
+    line-height: 1.2;
+
+    @media (max-width: @desktop-width) {
+      max-width: 100%;
+      margin: 0;
+      text-align: center;
+    }
+  }
+
+  &__description--main {
+    max-width: 702px;
+    margin-bottom: 94px;
+    font-family: "MyriadProRegular", Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.4;
+
+    @media (max-width: @desktop-width) {
+      margin-bottom: 63px;
+    }
+    @media (max-width: @desktop-width) {
+      margin-bottom: 42px;
+      font-size: 14px;
+    }
+  }
+
+  &__image {
+    position: absolute;
+    top: 62px;
+    right: 0;
+    max-width: 681px;
+
+    @media (max-width: @desktop-width) {
+      display: none;
+    }
+  }
+}
